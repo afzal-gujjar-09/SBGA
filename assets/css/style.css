@@ -107,6 +107,12 @@ height: 100vh;
 height: 100vh;
 object-fit: cover;
 }
+@media (max-width: 767px) {
+    .carousel-overlay  {
+        top: 9% !important;
+        left: 45% !important;
+    }
+  }
 
 /* === Overlay That Puts Navbar on Top of Carousel === */
 .carousel-overlay {
