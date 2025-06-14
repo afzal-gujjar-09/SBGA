@@ -8,8 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
- <link rel="stylesheet" href="assets/css/style.css">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
@@ -36,110 +36,142 @@
     <img src="assets/images/logo.png" alt="SBGA Logo" class="logo-img-fluid">
   </div>
 
-  <!-- Circular Navbar Carousel -->
-  <div class="container-fluid-fluid py-3 nav-back">
-    <div class="navbar-carousel justify-content-around py-1">
-      <!-- Home -->
-      <div class="nav-item-circle">
-        <a class="nav-link-circle" href="#">
-          <i class="fas fa-home"></i>
-          <span>Home</span>
-        </a>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-image-overlay"></div>
+        <img src="assets/images/art1.jpg" class="d-block w-100" alt="...">
       </div>
-
-      <!-- GSA Services -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-building"></i>
-          <span>GSA Services</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">GSA Schedule</a></li>
-          <li><a class="dropdown-item" href="#">GSA Advantage</a></li>
-          <li><a class="dropdown-item" href="#">GSA Contracting</a></li>
-        </ul>
+      <div class="carousel-item">
+        <img src="assets/images/art2.jpg" class="d-block w-100" alt="...">
       </div>
-
-      <!-- VET Services -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-user-shield"></i>
-          <span>VET Services</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Veteran Verification</a></li>
-          <li><a class="dropdown-item" href="#">Veteran Benefits</a></li>
-          <li><a class="dropdown-item" href="#">Veteran Resources</a></li>
-        </ul>
+      <div class="carousel-item">
+        <img src="assets/images/art3.jpg" class="d-block w-100" alt="...">
       </div>
-
-      <!-- Certification Services -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-certificate"></i>
-          <span>Certification</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Small Business</a></li>
-          <li><a class="dropdown-item" href="#">Woman-Owned</a></li>
-          <li><a class="dropdown-item" href="#">8(a) Certification</a></li>
-        </ul>
-      </div>
-
-      <!-- Contracting Vehicles -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-file-contract"></i>
-          <span>Contracting</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Bidding Process</a></li>
-          <li><a class="dropdown-item" href="#">Contract Types</a></li>
-          <li><a class="dropdown-item" href="#">Proposal Help</a></li>
-        </ul>
-      </div>
-
-      <!-- Business Services -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-briefcase"></i>
-          <span>Business</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Consulting</a></li>
-          <li><a class="dropdown-item" href="#">Training</a></li>
-          <li><a class="dropdown-item" href="#">Compliance</a></li>
-        </ul>
-      </div>
-
-      <!-- Other Services -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-ellipsis-h"></i>
-          <span>Other</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Custom Solutions</a></li>
-          <li><a class="dropdown-item" href="#">Special Programs</a></li>
-        </ul>
-      </div>
-
-      <!-- News & Feed -->
-      <div class="nav-item-circle dropdown">
-        <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <i class="fas fa-newspaper"></i>
-          <span>News</span>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Latest Updates</a></li>
-          <li><a class="dropdown-item" href="#">Blog</a></li>
-          <li><a class="dropdown-item" href="#">Events</a></li>
-        </ul>
-      </div>
-
     </div>
-  </div>
+  
+    <!-- Arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+    <!-- Navbar OVERLAY -->
+    <div class="carousel-overlay">
+        <div class="navbar-carousel justify-content-around py-1">
+            <!-- Home -->
+            <div class="nav-item-circle">
+              <a class="nav-link-circle" href="#">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+              </a>
+            </div>
+      
+            <!-- GSA Services -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-building"></i>
+                <span>GSA Services</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">GSA Schedule</a></li>
+                <li><a class="dropdown-item" href="#">GSA Advantage</a></li>
+                <li><a class="dropdown-item" href="#">GSA Contracting</a></li>
+              </ul>
+            </div>
+      
+            <!-- VET Services -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-user-shield"></i>
+                <span>VET Services</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Veteran Verification</a></li>
+                <li><a class="dropdown-item" href="#">Veteran Benefits</a></li>
+                <li><a class="dropdown-item" href="#">Veteran Resources</a></li>
+              </ul>
+            </div>
+      
+            <!-- Certification Services -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-certificate"></i>
+                <span>Certification</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Small Business</a></li>
+                <li><a class="dropdown-item" href="#">Woman-Owned</a></li>
+                <li><a class="dropdown-item" href="#">8(a) Certification</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contracting Vehicles -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-file-contract"></i>
+                <span>Contracting</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Bidding Process</a></li>
+                <li><a class="dropdown-item" href="#">Contract Types</a></li>
+                <li><a class="dropdown-item" href="#">Proposal Help</a></li>
+              </ul>
+            </div>
+      
+            <!-- Business Services -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-briefcase"></i>
+                <span>Business</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Consulting</a></li>
+                <li><a class="dropdown-item" href="#">Training</a></li>
+                <li><a class="dropdown-item" href="#">Compliance</a></li>
+              </ul>
+            </div>
+      
+            <!-- Other Services -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-ellipsis-h"></i>
+                <span>Other</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Custom Solutions</a></li>
+                <li><a class="dropdown-item" href="#">Special Programs</a></li>
+              </ul>
+            </div>
+      
+            <!-- News & Feed -->
+            <div class="nav-item-circle dropdown">
+              <a class="nav-link-circle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-newspaper"></i>
+                <span>News</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Latest Updates</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Events</a></li>
+              </ul>
+            </div>
+      
+          </div>
+          <!-- Heading + Description -->
+          <div class="carousel-caption custom-caption">
+            <h5>Empower Your Business Journey</h5>
+            <p>We help you secure government contracts with expert guidance and tailored services.</p>
+          </div>
+    </div>
 
+
+
+  </div>
 
   <section class="content-section py-5 px-3">
     <section class="section-header text-center py-4">
@@ -251,7 +283,7 @@
   </section>
 
 
-  <section class="article-section">
+  <section class="">
     <section class="section-header text-center py-4">
       <div class="container-fluid">
         <div class="fade-in">
@@ -264,65 +296,80 @@
 
     <div class="container-fluid">
       <div class="row">
-        <!-- Left Column -->
-        <div class="col-12 col-md-3 d-flex flex-column gap-4">
-          <div class="card article-card fade-in fade-delay-1">
-            <img src="assets/images/art2.jpg" class="card-img-top" alt="Left 1">
-            <div class="card-body">
-              <h5 class="card-title">Contracting Basics</h5>
-              <p class="card-text">An introduction to government contracting...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+        <div class="col-12">
+            <div class="row py-4 align-items-center h-100 fade-in fade-delay-3">
+              <!-- 🖼 Image Left (Col-6 on md+, full width on sm) -->
+              <div class="col-12 col-md-6 ">
+                <img src="assets/images/art1.jpg" class="img-fluid w-100 rounded-5" alt="Featured">
+              </div>
+              <!-- 📄 Content Right (Col-6 on md+, full width on sm) -->
+              <div class="col-12 col-md-6">
+                <div class="card-body text-center">
+                  <div class="fade-in pb-4">
+                  <h2 class="card-title">Proposal Writing</h2>
+                  <div class="underline mx-auto mt-2"></div>
+                  </div>
+                  <p class="card-text">
+                    Crafting a strong proposal is one of the most critical steps in winning a government contract. This article provides an in-depth look at how small businesses can develop clear, compelling, and compliant proposals that meet government requirements. It covers essential components such as understanding the solicitation, aligning your capabilities with the contract scope, pricing competitively, and showcasing past performance. You'll also learn how to avoid common mistakes, structure your response professionally, and tailor your proposal to highlight your unique value. Whether you're new to federal contracting or looking to improve your win rate, this guide helps you create proposals that stand out.
+                  </p>
+                  <a href="#" class="btn btn-primary mt-2">Continue Reading</a>
+                </div>
+              </div>
+              
+          
             </div>
-          </div>
-          <div class="card article-card fade-in fade-delay-2">
-            <img src="assets/images/art3.jpg" class="card-img-top" alt="Left 2">
-            <div class="card-body">
-              <h5 class="card-title">Eligibility Check</h5>
-              <p class="card-text">A guide to help businesses determine...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+        </div>
+        <div class="col-12">
+          <div class="row py-4 align-items-center h-100 fade-in fade-delay-3">
+            <!-- 📄 Content Left (md+), Bottom on sm -->
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="card-body text-center">
+                <div class="fade-in pb-4">
+                  <h2 class="card-title">Proposal Writing</h2>
+                  <div class="underline mx-auto mt-2"></div>
+                </div>
+                <p class="card-text">
+                  Crafting a strong proposal is one of the most critical steps in winning a government contract. This article provides an in-depth look at how small businesses can develop clear, compelling, and compliant proposals that meet government requirements. It covers essential components such as understanding the solicitation, aligning your capabilities with the contract scope, pricing competitively, and showcasing past performance. You'll also learn how to avoid common mistakes, structure your response professionally, and tailor your proposal to highlight your unique value. Whether you're new to federal contracting or looking to improve your win rate, this guide helps you create proposals that stand out.
+                </p>
+                <a href="#" class="btn btn-primary mt-2">Continue Reading</a>
+              </div>
+            </div>
+        
+            <!-- 🖼 Image Right (md+), Top on sm -->
+            <div class="col-12 col-md-6 order-1 order-md-2">
+              <img src="assets/images/art1.jpg" class="img-fluid w-100 rounded-5" alt="Featured">
             </div>
           </div>
         </div>
-
-        <!-- Center Featured Article -->
-        <div class="col-12 col-md-6">
-          <div class="card article-card h-100 fade-in fade-delay-3">
-            <img src="assets/images/art1.jpg" class="center-img" alt="Featured">
+      <div class="col-12">
+        <div class="row py-4 align-items-center h-100 fade-in fade-delay-3">
+          <!-- 🖼 Image Left (Col-6 on md+, full width on sm) -->
+          <div class="col-12 col-md-6 ">
+            <img src="assets/images/art1.jpg" class="img-fluid w-100 rounded-5" alt="Featured">
+          </div>
+          <!-- 📄 Content Right (Col-6 on md+, full width on sm) -->
+          <div class="col-12 col-md-6">
             <div class="card-body text-center">
-              <h4 class="card-title">🔥Proposal Writing</h4>
+              <div class="fade-in pb-4">
+              <h2 class="card-title">Proposal Writing</h2>
+              <div class="underline mx-auto mt-2"></div>
+              </div>
               <p class="card-text">
                 Crafting a strong proposal is one of the most critical steps in winning a government contract. This article provides an in-depth look at how small businesses can develop clear, compelling, and compliant proposals that meet government requirements. It covers essential components such as understanding the solicitation, aligning your capabilities with the contract scope, pricing competitively, and showcasing past performance. You'll also learn how to avoid common mistakes, structure your response professionally, and tailor your proposal to highlight your unique value. Whether you're new to federal contracting or looking to improve your win rate, this guide helps you create proposals that stand out.
               </p>
-              <a href="#" class="btn btn-primary">Continue Reading</a>
+              <a href="#" class="btn btn-primary mt-2">Continue Reading</a>
             </div>
           </div>
+          
+      
         </div>
-
-        <!-- Right Column -->
-        <div class="col-12 col-md-3 d-flex flex-column gap-4">
-          <div class="card article-card fade-in fade-delay-4">
-            <img src="assets/images/art4.jpg" class="card-img-top" alt="Right 1">
-            <div class="card-body">
-              <h5 class="card-title">Certification Guide</h5>
-              <p class="card-text">Overview of certifications (like 8(a), HUBZone,...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-            </div>
-          </div>
-          <div class="card article-card fade-in fade-delay-5">
-            <img src="assets/images/art5.jpg" class="card-img-top" alt="Right 2">
-            <div class="card-body">
-              <h5 class="card-title">Bid Strategies</h5>
-              <p class="card-text">Insight into effective bidding strategies...</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-            </div>
-          </div>
-        </div>
+    </div>
       </div>
     </div>
   </section>
 
 
-  <section class="py-5">
+  <section class="py-5  article-section">
     <section class="section-header text-center py-4">
       <div class="container-fluid">
         <div class="fade-in">

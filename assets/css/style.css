@@ -9,6 +9,12 @@
   background-color: #112349!important;
   color: #ffffff!important;
 }
+
+@media (max-width: 767px) {
+  .mtb {
+    margin-top: 25px !important;
+  }
+}
 /* Top Info Bar Styles */
 .top-info-bar {
   font-size: 0.9rem;
@@ -31,63 +37,195 @@
   font-size: 20px;
   opacity: 0.6;
 }
+.rounded-5{
+  border-radius: 50px !important;
+}
 
-/* Circular Navbar Styles */
+@media (max-width: 767px) {
+  .custom-caption {
+    position: absolute;
+top: 115% !important;
+left: 50% !important;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 15;
+color: #fff;
+max-width: 100%;
+width: 60%;
+
+  }
+}
+/* --- Empower Caption Overlay on Carousel --- */
+.custom-caption {
+position: absolute;
+top: 115%;
+left: 35%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 15;
+color: #fff;
+max-width: 100%;
+}
+
+.custom-caption h5 {
+font-size: 3rem;
+font-weight: 700;
+line-height: 1.2;
+}
+
+.custom-caption {
+font-size: 1.5rem;
+font-weight: 400;
+display: block;
+text-align: left;
+}
+
+/* --- Gray Overlay on Image --- */
+.carousel-item::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: rgba(0, 0, 0, 0.4); /* Light gray/blackish overlay */
+z-index: 5;
+}
+.carousel-item img {
+position: relative;
+z-index: 1;
+}
+
+/* === Carousel Full Height === */
+.carousel,
+.carousel-inner,
+.carousel-item {
+height: 100vh;
+}
+
+.carousel-item img {
+height: 100vh;
+object-fit: cover;
+}
+
+/* === Overlay That Puts Navbar on Top of Carousel === */
+.carousel-overlay {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 10;
+width: 100%;
+padding: 10px 0;
+/* background: rgba(0, 0, 0, 0.25); Optional semi-transparent bg */
+/* backdrop-filter: blur(4px); Optional frosted glass effect */
+}
+
+/* === Circular Navbar Styles === */
 .navbar-carousel {
-  display: inline-flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-  width: 100%;
+display: inline-flex;
+overflow-x: auto;
+white-space: nowrap;
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* IE/Edge */
+width: 100%;
+justify-content: center;
+padding: 0 15px;
 }
-.nav-back{
-background: linear-gradient(to right,  #1E337E, #1E337E);
-}
+
 .navbar-carousel::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+display: none; /* Chrome/Safari */
 }
 
 .nav-item-circle {
-  flex: 0 0 auto; /* Do not grow/shrink */
-  margin: 0 10px;
-  text-align: center;
-  position: relative; /* For dropdown positioning */
+flex: 0 0 auto;
+margin: 0 10px;
+text-align: center;
+position: relative;
 }
 
 .nav-link-circle {
-  background: #f8f9fa;
-  border-radius: 50%;
-  width: 106px;
-  height: 106px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  color: #333;
-  text-decoration: none;
+background: #f8f9fa;
+border-radius: 50%;
+width: 106px;
+height: 106px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+color: #333;
+text-decoration: none;
 }
 
 .nav-link-circle:hover {
-  background: #254099;
-  color: white;
-  transform: translateY(-5px);
+background: #254099;
+color: #fff;
+transform: translateY(-5px);
 }
 
 .nav-link-circle i {
-  font-size: 24px;
-  margin-bottom: 8px;
+font-size: 24px;
+margin-bottom: 6px;
 }
 
+/* === Dropdown Menu Styling === */
 .dropdown-menu {
-  position: fixed !important; /* Instead of absolute */
-  top: 150px; /* Adjust depending on your layout */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  display: none; /* Hide by default */
+position: fixed !important;
+top: 130px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 9999;
+display: none;
+}
+.dropdown-menu :hover{
+background-color: #254099 !important;
+color: #ffffff!important;
+}
+/* .nav-item-circle:hover .dropdown-menu {
+display: block;
+position: relative;
+} */
+.carousel-control-prev,
+.carousel-control-next {
+width: 60px;
+height: 60px;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(255, 255, 255, 0.5); /* light background */
+border-radius: 50%;
+z-index: 20;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+filter: invert(0); /* keep default icon color */
+}
+.carousel-image-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(100, 100, 100, 0.3); /* Adjust opacity as needed */
+z-index: 1;
+}.carousel-overlay h1,
+.carousel-overlay p {
+text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* readability boost */
+}
+/* === Optional: Floaty Animation on Circles === */
+@keyframes floaty {
+0%, 100% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-6px);
+}
+}
+
+/* Apply animation (optional — remove if too much) */
+.nav-link-circle {
+animation: floaty 3s ease-in-out infinite;
 }
 
 /* Optional hover toggle (uncomment if needed) */
@@ -134,13 +272,15 @@ background: linear-gradient(to right,  #1E337E, #1E337E);
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 2.0rem;
   font-weight: 600;
+
 }
 
 .card-text {
   font-size: 0.95rem;
   color: #555;
+text-align: justify !important;
 }
 
 .article-section {
